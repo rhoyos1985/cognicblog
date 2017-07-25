@@ -1,6 +1,6 @@
 machine:
   node:
-    version: 0.10.43
+    version: latest
 dependencies:
   override:
     - curl https://install.meteor.com | /bin/sh
