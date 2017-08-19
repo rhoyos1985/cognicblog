@@ -3,15 +3,16 @@
   "private": true,
   "scripts": {
     "start": "meteor run",
-    "test": "meteor test --once --driver-package dispatch:mocha",
-    "test-watch": "meteor test --driver-package practicalmeteor:mocha",
+    "test": "meteor test --once --driver-package practicalmeteor:mocha",
+    "test-watch": "meteor test --driver-package dispatch:mocha",
     "test-app-watch": "meteor test --full-app --driver-package practicalmeteor:mocha",
     "lint": "eslint --ext .js, .jsx .",
     "pretest": "npm run lint --silent"
   },
   "dependencies": {
     "babel-runtime": "^6.20.0",
-    "meteor-node-stubs": "~0.2.4"
+    "meteor-node-stubs": "~0.2.4",
+    "simpl-schema": "^0.3.1"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
@@ -52,6 +53,7 @@
       "import/no-extraneous-dependencies": 0,
       "import/prefer-default-export": "off",
       "no-underscore-dangle": 0,
+      "no-console": ["error", { "allow": ["warn", "error"] }],
       "class-methods-use-this": "off",
       "meteor/no-session": "off",
       "object-shorthand": [
@@ -62,7 +64,10 @@
         }
       ],
       "space-before-function-paren": 0,
-      "func-names": ["error", "always"],
+      "func-names": [
+        "error",
+        "always"
+      ],
       "prefer-arrow-callback": 0,
       "meteor/eventmap-params": [
         "error",

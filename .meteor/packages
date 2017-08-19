@@ -21,7 +21,13 @@ kadira:blaze-layout     # Layout manager for blaze (works well with FlowRouter)
 less@2.7.9                    # Leaner CSS language
 
 
-practicalmeteor:mocha             # A package for writing and running your meteor app and package tests with mocha
-johanbrook:publication-collector  # Test a Meteor publication by collecting its output
-practicalmeteor:chai
+practicalmeteor:mocha             	# A package for writing and running your meteor app and package tests with mocha
+johanbrook:publication-collector  	# Test a Meteor publication by collecting its output
+practicalmeteor:chai				# A package for writing asserting your meteor app
 dispatch:mocha
+
+xolvio:cleaner						# A package to cleaner database Test
+accounts-password					# This package contain the methods for user logging
+aldeed:collection2-core
+mdg:validated-method
+underscore
